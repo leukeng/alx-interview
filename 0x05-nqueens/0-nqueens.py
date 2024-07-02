@@ -2,7 +2,6 @@
 """ N QUEENS ALGORITHM WITH BACKTRACKING (RECURSION INSIDE LOOP) """
 import sys
 
-
 class NQueen:
     """ Class for solving N Queen Problem """
 
@@ -46,7 +45,6 @@ class NQueen:
                     # Need to place more Queens
                     self.nQueen(k + 1)
         return self.res
-
 
 # Main
 
