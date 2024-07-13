@@ -1,42 +1,20 @@
-SOLUTION TO 0x06. Star Wars API
+# 0x06. Star Wars API
 
-The “0. Star Wars Characters” project requires you to interact with an external API to fetch and display information about Star Wars characters based on the movie ID provided as an argument. To successfully complete this project, you need to be familiar with several key concepts related to web programming, API interaction, and asynchronous programming in JavaScript.
+<img src=https://camo.githubusercontent.com/a6b9a7c5ddb35d947dc7807ab90167c931c70920be0ee73493dcac1b88db7306/68747470733a2f2f7777772e746865646174617363686f6f6c2e636f6d2e61752f77702d636f6e74656e742f75706c6f6164732f323032322f30392f3630366534653230396631303763613366623635323834665f53637265656e2d53686f742d323032312d30342d30372d61742d382e32382e30312d504d2e706e67>
 
-Concepts Needed:
-HTTP Requests in JavaScript:
+## Install Node 10
+```
+$ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+$ sudo apt-get install -y nodejs
+```
 
-Understanding how to make HTTP requests to external services using the request module or alternatives like fetch in Node.js.
-A Complete Guide to Making HTTP Requests in Node.js
-Working with APIs:
+## Install semi-standard
+```
+$ sudo npm install semistandard --global
+```
 
-Understanding the basics of RESTful APIs and how to interact with them.
-Parsing JSON data returned by APIs.
-Working with APIs in JavaScript
-Asynchronous Programming:
-
-Managing asynchronous operations with callbacks, promises, and async/await syntax.
-Handling API response data asynchronously.
-Asynchronous Programming in JavaScript
-Command Line Arguments in Node.js:
-
-Using the process.argv array to access command-line arguments passed to a Node.js script.
-How to Parse Command Line Arguments in Node.js
-Array Manipulation and Iteration:
-
-Iterating over arrays and manipulating data structures to format and display character names.
-JavaScript Array Methods
-By familiarizing yourself with these concepts and resources, you will be able to efficiently retrieve, process, and display Star Wars characters from the specified movie using the Star Wars API, demonstrating your ability to work with external APIs and manage asynchronous code in JavaScript.
-
-Additional Resources
-Mock Technical Interview
-Requirements
-General
-Allowed editors: vi, vim, emacs
-All your files will be interpreted on Ubuntu 20.04 LTS using node (version 10.14.x)
-All your files should end with a new line
-The first line of all your files should be exactly #!/usr/bin/node
-A README.md file, at the root of the folder of the project, is mandatory
-Your code should be semistandard compliant. Rules of Standard + semicolons on top. Also as reference: AirBnB style
-All your files must be executable
-The length of your files will be tested using wc
-You are not allowed to use var
+## Install request module and use it
+```
+$ sudo npm install request --global
+$ export NODE_PATH=/usr/lib/node_modules
+```
